@@ -22,6 +22,10 @@ class SiteController extends Controller
 			),
 		);
 	}
+        public function actionIndex()
+        {
+            $this->render('index');
+        }
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -94,4 +98,8 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        public function actionAbout()
+        {
+            $this->render('about');
+        }
 }
