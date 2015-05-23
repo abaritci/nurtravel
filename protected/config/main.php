@@ -8,9 +8,9 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Nur Travel',
-        'theme'=>'New Theme',
+        'theme'=>'egret',
 
-	'preload' => array('log', 'bootstrap'),
+	//'preload' => array('log', 'bootstrap'),
         'import' => array(
             'application.models.*',
             'application.components.*',
@@ -28,9 +28,9 @@ return array(
 
 	// application components
 	'components'=>array(
-               'bootstrap' => array(
+              /* 'bootstrap' => array(
                                 'class' => 'application.extensions.bootstrap.components.Bootstrap',
-                            ),
+                            ),*/
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
